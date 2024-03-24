@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assests/images/bckground.jpg");
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+ .main .box{
+    height: 95vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    max-width: 70vw;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    color: red;
+    width: 140px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: "Martel", serif;
+  font-weight: 600;
+  font-style: normal;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: Segoe UI;
+    gap: 20px;
+    padding: 0px ;
+}
+.hero> :first-child{
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+
+}
+.hero >:nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+}
+.hero >:nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.seprate{
+    background-color: rgb(49, 48, 48);
+    height: 7px;
+}
+.btn{
+    padding:  3px 8px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(255, 253, 253, 0.106);
+    border: 1px solid rgba(255, 255, 255, 0.286);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding:   15px 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-radius: 0pc;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 7px;
+}
+.main input{
+    padding:  17px 101px 17px 4px;
+    /* margin-left: 3px; */
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgba(23, 23,23, 0.2);
+    color: rgb(188, 188, 188);
+    border: 1px solid rgba(255, 253, 253, 0.6);
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 7px;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.leftfirst{
+        padding: 60px;
+        font-size: 33px;
+        margin: 10px;
+}
+.setimage{
+    position: relative;
+
+}
+
+.setimage img{
+    width: 36vw;
+    position: relative;
+    z-index: 10;
+}
+.setimage video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+}
+.first > div {
+   display:flex;
+   flex-direction: column;
+}
+.first > div :first-child{
+    font-size: 48px;
+    font-weight: 900;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+    font-weight: 900;
+}
+.query{
+    display: flex;
+    background-color: gray;
+    padding: 34px;
+}
+
+
+.faq{
+    text-align: center;
+    padding: 72px 20px;
+}
+
+.faq h2{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+
+.accordion{
+    margin: auto;
+    width: 100%;
+    max-width: 1150px;
+    margin-bottom: 30px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 4px ;
+    letter-spacing: inherit;
+    line-height: inherit;
+    font-size: 24px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1.5px;
+    cursor: pointer;
+    position: relative;
+    background: #807e7e;
+    font-size: 24px;
+    text-align: left;
+}
+
+.accordion li label:hover{
+    background: rgb(60, 60, 60);
+}
+
+label::after{
+    content: '+';
+    font-size: 60px;
+    font-weight: 50;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+input[type = "radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 1.5rem;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+.accordion input[type="radio"]:not(:checked) + label + .content {
+    max-height: 0;
+    padding: 0;
+}
+
+.para-faq{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+/* footer */
+.footer{
+    padding: 72px 12%;
+    color: #777;
+}
+
+.call-txt{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.7);
+}
+
+.call-txt span{
+    text-decoration: underline;
+}
+
+.footer ul{
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    row-gap: 3px;
+    margin-bottom: 20px;
+}
+
+.footer ul li{
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+}
+
+.footer ul li a{
+    display: block;
+    text-decoration: underline;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.copyright{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.7);
+}
+
+
